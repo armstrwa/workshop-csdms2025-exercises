@@ -2,4 +2,4 @@
 title: "Home"
 ---
 
-This is the homepage of my website!
+My name is Billy Armstrong - I study glacier change and impacts on downstream environments.

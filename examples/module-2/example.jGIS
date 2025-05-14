@@ -1,8 +1,65 @@
 {
   "layerTree": [
-    "e220d708-c851-4f54-b9ae-9c56c5e04480"
+    "e220d708-c851-4f54-b9ae-9c56c5e04480",
+    "59118901-c8a5-4f31-86b7-ddb1e368e85e",
+    "d7a7e0c6-c43b-4761-8755-6638fa40848b",
+    "6dccd478-d6e8-4944-aece-62e086ed8fc1"
   ],
   "layers": {
+    "59118901-c8a5-4f31-86b7-ddb1e368e85e": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "SEEC and NSIDC",
+      "parameters": {
+        "color": null,
+        "opacity": 1.0,
+        "source": "62607f5e-0d62-4583-ac03-76da370f04b9",
+        "symbologyState": null,
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "6dccd478-d6e8-4944-aece-62e086ed8fc1": {
+      "name": "Custom GeoJSON Layer",
+      "parameters": {
+        "opacity": 1.0,
+        "source": "59b8f8e6-9f18-4946-921b-f1eb2d0ef07b",
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "d7a7e0c6-c43b-4761-8755-6638fa40848b": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "SEEC, NSIDC, Boone",
+      "parameters": {
+        "color": null,
+        "opacity": 1.0,
+        "source": "65261952-c605-4a06-8da3-88e55ade035b",
+        "symbologyState": null,
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
     "e220d708-c851-4f54-b9ae-9c56c5e04480": {
       "name": "Basemap",
       "parameters": {
@@ -16,19 +73,139 @@
   "options": {
     "bearing": 0.0,
     "extent": [
-      -16943218.227214247,
-      1813884.940591243,
-      -5539788.477108987,
-      8661878.212775469
+      -13763607.421157155,
+      1882380.7340136128,
+      -4715062.1477544755,
+      8222734.640376758
     ],
-    "latitude": 42.51130981651042,
-    "longitude": -100.98414277727615,
+    "latitude": 41.27208724979215,
+    "longitude": -82.99835651973804,
     "pitch": 0.0,
     "projection": "EPSG:3857",
-    "zoom": 4.3991367692285905
+    "zoom": 3.8816549661353736
   },
   "schemaVersion": "0.5.0",
   "sources": {
+    "59b8f8e6-9f18-4946-921b-f1eb2d0ef07b": {
+      "name": "Custom GeoJSON Layer Source",
+      "parameters": {
+        "path": "us_cities.geojson"
+      },
+      "type": "GeoJSONSource"
+    },
+    "62607f5e-0d62-4583-ac03-76da370f04b9": {
+      "name": "SEEC and NSIDC Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.24206599999948,
+                  40.01007767367196
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "4001 Discovery Dr., Boulder, CO",
+                "Name": "Sustainability, Energy, and Environment Community (SEEC) Building"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.25271574468819,
+                  40.01262175838934
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "National Snow and Ice Data Center CIRES, 449 UCB University of Colorado Boulder",
+                "Name": "National Snow and Ice Data Center (NSIDC)"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
+    },
+    "65261952-c605-4a06-8da3-88e55ade035b": {
+      "name": "SEEC, NSIDC, Boone Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.24206599999948,
+                  40.01007767367196
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "4001 Discovery Dr., Boulder, CO",
+                "Name": "Sustainability, Energy, and Environment Community (SEEC) Building"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.25271574468819,
+                  40.01262175838934
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "National Snow and Ice Data Center CIRES, 449 UCB University of Colorado Boulder",
+                "Name": "National Snow and Ice Data Center (NSIDC)"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -81.683683,
+                  36.227272
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "168 Sim Haven Lane, Boone, NC",
+                "Name": "Billy's house"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
+    },
     "8c8bb2c9-59a5-4962-9835-bd4eada4a4ce": {
       "name": "Esri.WorldGrayCanvas",
       "parameters": {
